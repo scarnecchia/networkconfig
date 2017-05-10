@@ -1,0 +1,88 @@
+## Pi-hole ad-list default sources. Updated 29/10/2016 #########################
+#                                                                              #
+#  To make changes to this file:                                               #
+#    1. run `cp /etc/pihole/adlists.default /etc/pihole/adlists.list`          #
+#    2. run `nano /etc/pihole/adlists.list`                                    #
+#    3. Uncomment or comment any of the below lists                            #
+#                                                                              #
+#  Know of any other lists? Feel free to let us know about them, or add them   #
+#  to this file!                                                               #
+################################################################################
+
+# The below list amalgamates several lists we used previously.
+# See `https://github.com/StevenBlack/hosts` for details
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://hosts-file.net/grm.txt
+https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
+
+# Other lists we consider safe:
+https://mirror1.malwaredomains.com/files/justdomains
+http://sysctl.org/cameleon/hosts
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+
+# Adtracking
+https://adaway.org/hosts.txt
+http://v.firebog.net/hosts/AdguardDNS.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://hosts-file.net/ad_servers.txt
+http://v.firebog.net/hosts/Easylist.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/SpotifyAds/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
+
+# hosts-file.net list. Updated frequently, but has been known to block legitimate sites.
+https://hosts-file.net/ad_servers.txt
+
+# Mahakala list. Has been known to block legitimate domains including the entire .com range.
+# Warning: Due to the sheer size of this list, the web admin console will be unresponsive.
+#https://adblock.mahakala.is/
+
+# ADZHOSTS list. Has been known to block legitimate domains
+#http://pilotfiber.dl.sourceforge.net/project/adzhosts/HOSTS.txt
+
+# Windows 10 telemetry list
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/win10/spy.txt
+
+# Tracking
+https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt
+http://v.firebog.net/hosts/Airelle-trc.txt
+http://v.firebog.net/hosts/Easyprivacy.txt
+https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.2o7Net/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/tyzbit/hosts
+
+# Block the BBC News website Breaking News banner
+#https://raw.githubusercontent.com/BreakingTheNews/BreakingTheNews.github.io/master/hosts
+
+# Untested Lists
+https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
+#https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt
+http://malwaredomains.lehigh.edu/files/domains.txt
+# Following two lists should be used simultaneously: (readme https://github.com/notracking/hosts-blocklists/)
+https://raw.github.com/notracking/hosts-blocklists/master/hostnames.txt
+https://raw.github.com/notracking/hosts-blocklists/master/domains.txt
+# Combination of several host files on the internet (warning some facebook domains are also blocked but you can go to facebook.com). See https://github.com/mat1th/Dns-add-block for more information.
+#https://raw.githubusercontent.com/mat1th/Dns-add-block/master/hosts
+#pgl.yoyo.org
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0;&useip=0.0.0.0
+
+#Malicious
+https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+http://v.firebog.net/hosts/Airelle-hrsk.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+http://mirror1.malwaredomains.com/files/justdomains
+https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
+https://hosts-file.net/exp.txt
+https://hosts-file.net/emd.txt
+https://hosts-file.net/psh.txt
+https://www.malwaredomainlist.com/hostslist/hosts.txt
+https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
+https://hosts-file.net/grm.txt
+https://openphish.com/feed.txt
+http://v.firebog.net/hosts/Shalla-mal.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+
+#Propaganda
+https://raw.githubusercontent.com/scarnecchia/propaganda/master/propaganda

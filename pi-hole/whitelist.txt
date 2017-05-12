@@ -38,3 +38,10 @@ docs.google.com
 p.typekit.net
 reddestdream.github.io
 adaway.org
+appleid.apple.com
+clients4.google.com
+clients2.google.com
+dl.dropbox.com
+bit.ly
+backblaze.com
+someonewhocares.org
